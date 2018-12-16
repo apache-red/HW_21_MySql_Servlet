@@ -12,9 +12,10 @@
   </head>
   <body>
 
-  <li><a href="MySecondSevlet?action=3">Show All</a></li>
-  <li><a href="MySecondSevlet?action=2">Show catalog books</a></li>
-  <li><a href="MySecondSevlet?action=3">Show catalog autors</a></li>
+  <%--<li><a href="show/show_all.jsp">Show All </a></li>--%>
+  <li><a href="ServletShowAll?action=1">Show All</a></li>
+  <li><a href="MySecondSevlet?action=2">Show author books</a></li>
+  <li><a href="MySecondSevlet?action=3">Show author autors</a></li>
   <li><a href="add_autors.jsp">add new Authors </a></li>
   <li><a href="add_autors.jsp">add new Book </a></li>
   <li><a href="add_autors.jsp">delete book by ID </a></li>
