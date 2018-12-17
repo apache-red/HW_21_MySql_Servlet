@@ -45,5 +45,10 @@ public class RegularDBServiceImpl implements DBService {
         dbCommand.addNewBookInDb(book_name);
     }
 
+    @Override
+    public void deleteBook(DBCommand dbCommand, String id_book) {
+        dbCommand.deleteBookInDb(id_book);
+    }
+
 
 }

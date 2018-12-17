@@ -118,6 +118,25 @@ public class BookDaoSQLImpl implements DBCommand {
         }
     }
 
+    @Override
+    public void deleteBookInDb(String id_book) {
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
+            Statement stmt = connection.createStatement();
+            int num = Integer.parseInt(id_book);
+            System.out.println(num);
+            String sql;
+            sql = "USE librarywebnew;";
+            stmt.execute(sql);
+            sql = "DELETE FROM `librarywebnew`.`catalog_books` WHERE `id` = "+num+";";
+            stmt.execute(sql);
+            System.out.println();
+        } catch (SQLException e) {
+            System.err.println("Error FILL DB !!!!");
+            e.printStackTrace();
+        }
+
+    }
+
 
     private void collectAuthorsFromRS(Statement st, List<Author> authorList) throws SQLException {
         ResultSet rs = st.executeQuery("SELECT * FROM mylibrary;");

@@ -15,4 +15,5 @@ public interface DBService {
     List<Book> getBookListFromLibrary(DBCommand dbCommand);
     void addNewAuthor(DBCommand dbCommand, String author_name);
     void addNewBook(DBCommand dbCommand, String book_name);
+    void deleteBook(DBCommand dbCommand, String id_book);
 }
