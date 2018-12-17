@@ -101,6 +101,23 @@ public class BookDaoSQLImpl implements DBCommand {
 
     }
 
+    @Override
+    public void addNewBookInDb(String book_name) {
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
+            Statement stmt = connection.createStatement();
+            String sql;
+            sql = "USE librarywebnew;";
+            stmt.execute(sql);
+            //4 = Unknown author
+            sql = "INSERT INTO `librarywebnew`.`catalog_books` (`book_title`,`auth_id`) VALUES ('"+book_name+"',"+4+");";
+            stmt.execute(sql);
+            System.out.println();
+        } catch (SQLException e) {
+            System.err.println("Error FILL DB !!!!");
+            e.printStackTrace();
+        }
+    }
+
 
     private void collectAuthorsFromRS(Statement st, List<Author> authorList) throws SQLException {
         ResultSet rs = st.executeQuery("SELECT * FROM mylibrary;");
@@ -172,6 +189,8 @@ public class BookDaoSQLImpl implements DBCommand {
             sql = "INSERT INTO `librarywebnew`.`mylibrary` (`catalog_authors`) VALUES ('Petya Petrov');";
             stmt.execute(sql);
             sql = "INSERT INTO `librarywebnew`.`mylibrary` (`catalog_authors`) VALUES ('Vasya Vasiliev');";
+            stmt.execute(sql);
+            sql = "INSERT INTO `librarywebnew`.`mylibrary` (`catalog_authors`) VALUES ('Unknown author');";
             stmt.execute(sql);
             sql = "CREATE TABLE catalog_books(id INT PRIMARY KEY AUTO_INCREMENT,book_title varchar(40) NOT NULL, auth_id INT , FOREIGN KEY  (auth_id) REFERENCES mylibrary(id));";
             stmt.execute(sql);

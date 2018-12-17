@@ -17,7 +17,7 @@
   <li><a href="ServletShow?action=2">Show all authors</a></li>
   <li><a href="ServletShow?action=3">Show all books</a></li>
   <li><a href="add_autor.jsp">add new Authors </a></li>
-  <li><a href="add_autors.jsp">add new Book </a></li>
+  <li><a href="add_book.jsp">add new Book </a></li>
   <li><a href="add_autors.jsp">delete book by ID </a></li>
   <li><a href="add_autors.jsp">edit book title by ID </a></li>
   <li><a href="add_autors.jsp">find book by title </a></li>

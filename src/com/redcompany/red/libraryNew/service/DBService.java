@@ -14,4 +14,5 @@ public interface DBService {
     List<Author> getAuthorListFromLibrary(DBCommand dbCommand);
     List<Book> getBookListFromLibrary(DBCommand dbCommand);
     void addNewAuthor(DBCommand dbCommand, String author_name);
+    void addNewBook(DBCommand dbCommand, String book_name);
 }

@@ -13,6 +13,7 @@ public interface DBCommand {
     List<Author> getAuthorList();
     List<Book> getBookList();
     void addNewAuthorInDb(String author_name);
+    void addNewBookInDb(String book_name);
 
 
 }
