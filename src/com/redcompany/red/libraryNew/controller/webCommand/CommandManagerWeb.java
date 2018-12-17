@@ -2,6 +2,7 @@ package com.redcompany.red.libraryNew.controller.webCommand;
 
 
 import com.redcompany.red.libraryNew.controller.webCommand.impl.ShowAllCommand;
+import com.redcompany.red.libraryNew.controller.webCommand.impl.ShowAuthorsCommand;
 
 public class CommandManagerWeb {
 
@@ -9,8 +10,8 @@ public class CommandManagerWeb {
         switch (action) {
             case "1":
                return new ShowAllCommand();
-//            case "2":
-//                return new TwoActionImpl();
+            case "2":
+                return new ShowAuthorsCommand();
            default:
                 return null;
         }

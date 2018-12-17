@@ -38,9 +38,7 @@ public class BookDaoSQLImpl implements DBCommand {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-
         initBD();
-
         } catch (ClassNotFoundException e1) {
             e1.printStackTrace();
         }
@@ -50,20 +48,26 @@ public class BookDaoSQLImpl implements DBCommand {
     public Library getLibrary() {
         Library libraryDB = new Library();
         List<Author> authorList = libraryDB.createNewAuthorList();
-
-
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
             Statement st = connection.createStatement();
             collectAuthorsFromRS(st, authorList);
             collectBooksFromRS(st, authorList);
-            System.out.println();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
-
         return libraryDB;
+    }
+
+    @Override
+    public List<Author> getAuthorList() {
+        List<Author> authorList = new ArrayList<>();
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
+            Statement st = connection.createStatement();
+            collectAuthorsFromRS(st, authorList);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return authorList;
     }
 
 

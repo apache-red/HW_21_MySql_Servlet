@@ -56,10 +56,8 @@ public class Author {
 
     @Override
     public String toString() {
-        return "Author{" +
+        return "\n"+"Author{" +
                 "responsiblePerson='" + responsiblePerson + '\'' +
-                ", creationData=" + creationData +
-                ", books=" + books +
-                '}';
+                ", creationData=" + creationData + '}';
     }
 }

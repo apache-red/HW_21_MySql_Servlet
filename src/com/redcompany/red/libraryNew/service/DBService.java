@@ -9,5 +9,6 @@ import java.util.List;
 public interface DBService {
 
 
-    List<Author> getCatalogListFromLibrary(DBCommand dbCommand);
+    List<Author> geAllDataFromLibrary(DBCommand dbCommand);
+    List<Author> getAuthorListFromLibrary(DBCommand dbCommand);
 }

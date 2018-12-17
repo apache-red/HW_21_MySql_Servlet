@@ -11,17 +11,22 @@ import java.util.List;
 public class RegularDBServiceImpl implements DBService {
    private DBCommand dbCommand;
    private Library library;
+   private List<Author> authorList;
 
 
 
 
     @Override
-    public List<Author> getCatalogListFromLibrary(DBCommand dbCommand) {
+    public List<Author> geAllDataFromLibrary(DBCommand dbCommand) {
         library = dbCommand.getLibrary();
         return library.getAuthorList();
 
     }
 
+    @Override
+    public List<Author> getAuthorListFromLibrary(DBCommand dbCommand) {
+        return authorList = dbCommand.getAuthorList();
+    }
 
 
 }
