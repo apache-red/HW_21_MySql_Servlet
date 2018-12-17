@@ -84,14 +84,14 @@ public class BookDaoSQLImpl implements DBCommand {
     }
 
     @Override
-    public void addNewAuthorInDb(String  author_name) {
+    public void addNewAuthorInDb(String author_name) {
 
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
             Statement stmt = connection.createStatement();
             String sql;
             sql = "USE librarywebnew;";
             stmt.execute(sql);
-            sql = "INSERT INTO `librarywebnew`.`mylibrary` (`catalog_authors`) VALUES ('"+ author_name+"');";
+            sql = "INSERT INTO `librarywebnew`.`mylibrary` (`catalog_authors`) VALUES ('" + author_name + "');";
             stmt.execute(sql);
             System.out.println();
         } catch (SQLException e) {
@@ -109,7 +109,7 @@ public class BookDaoSQLImpl implements DBCommand {
             sql = "USE librarywebnew;";
             stmt.execute(sql);
             //4 = Unknown author
-            sql = "INSERT INTO `librarywebnew`.`catalog_books` (`book_title`,`auth_id`) VALUES ('"+book_name+"',"+4+");";
+            sql = "INSERT INTO `librarywebnew`.`catalog_books` (`book_title`,`auth_id`) VALUES ('" + book_name + "'," + 4 + ");";
             stmt.execute(sql);
             System.out.println();
         } catch (SQLException e) {
@@ -127,7 +127,7 @@ public class BookDaoSQLImpl implements DBCommand {
             String sql;
             sql = "USE librarywebnew;";
             stmt.execute(sql);
-            sql = "DELETE FROM `librarywebnew`.`catalog_books` WHERE `id` = "+num+";";
+            sql = "DELETE FROM `librarywebnew`.`catalog_books` WHERE `id` = " + num + ";";
             stmt.execute(sql);
         } catch (SQLException e) {
             System.err.println("Error FILL DB !!!!");
@@ -144,13 +144,32 @@ public class BookDaoSQLImpl implements DBCommand {
             int num = Integer.parseInt(id_book);
             sql = "USE librarywebnew;";
             stmt.execute(sql);
-            sql = "UPDATE `librarywebnew`.`catalog_books` t SET t.`book_title` = '"+book_name+"' WHERE t.`id` ="+ num+";";
+            sql = "UPDATE `librarywebnew`.`catalog_books` t SET t.`book_title` = '" + book_name + "' WHERE t.`id` =" + num + ";";
             stmt.execute(sql);
             System.out.println();
         } catch (SQLException e) {
             System.err.println("Error FILL DB !!!!");
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public Book findBookInDb(String book_name) {
+
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
+            Statement stmt = connection.createStatement();
+            System.out.println(book_name);
+            ResultSet rs = stmt.executeQuery("SELECT id,book_title FROM librarywebnew.catalog_books\n" +
+                    "WHERE book_title IN (SELECT id, book_title FROM librarywebnew.catalog_books WHERE book_title LIKE '%" +book_name+"%');");
+            int id_book = rs.getInt("id");
+            String title = rs.getString("book_title");
+            Book book = new Book(id_book, title);
+            return book;
+        } catch (SQLException e) {
+            System.err.println("Error FILL DB !!!!");
+            e.printStackTrace();
+        }
+        return null;
     }
 
 

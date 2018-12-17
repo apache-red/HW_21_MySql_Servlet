@@ -10,12 +10,11 @@ import com.redcompany.red.libraryNew.service.DBService;
 import java.util.List;
 
 public class RegularDBServiceImpl implements DBService {
-   private DBCommand dbCommand;
-   private Library library;
-   private List<Author> authorList;
-   private List<Book> bookList;
-
-
+    private DBCommand dbCommand;
+    private Library library;
+    private List<Author> authorList;
+    private List<Book> bookList;
+    private Book book;
 
 
     @Override
@@ -37,7 +36,7 @@ public class RegularDBServiceImpl implements DBService {
 
     @Override
     public void addNewAuthor(DBCommand dbCommand, String author_name) {
-    dbCommand.addNewAuthorInDb(author_name);
+        dbCommand.addNewAuthorInDb(author_name);
     }
 
     @Override
@@ -52,7 +51,12 @@ public class RegularDBServiceImpl implements DBService {
 
     @Override
     public void editBook(DBCommand dbCommand, String id_book, String book_name) {
-        dbCommand.editBookInDb(id_book,book_name);
+        dbCommand.editBookInDb(id_book, book_name);
+    }
+
+    @Override
+    public Book findBook(DBCommand dbCommand, String book_name) {
+        return book = dbCommand.findBookInDb(book_name);
     }
 
 

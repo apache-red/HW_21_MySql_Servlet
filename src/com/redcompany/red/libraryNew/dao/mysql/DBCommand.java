@@ -16,6 +16,7 @@ public interface DBCommand {
     void addNewBookInDb(String book_name);
     void deleteBookInDb(String id_book);
     void editBookInDb(String id_book,String book_name );
+    Book findBookInDb(String book_name );
 
 
 }

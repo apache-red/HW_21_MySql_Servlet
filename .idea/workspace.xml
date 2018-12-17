@@ -7,14 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a7c915a-a2a2-405e-929a-10579f7ea73b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/EditTitleBookByIdCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/FindBookByTitleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/find_book.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/CommandManagerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/CommandManagerWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/DBCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/DBCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/DBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/DBService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/impl/RegularDBServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/impl/RegularDBServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/edit_book.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/edit_book_title.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,67 +64,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/DeleteBookByIdCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="36" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/edit_book_title.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/web/servlets/ServletPost.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/CommandManagerWeb.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/EditTitleBookByIdCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/DBService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -132,26 +75,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/impl/RegularDBServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="311">
+              <caret line="58" column="56" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1081#1082#0" expanded="true" />
                 <element signature="e#1132#1133#0" expanded="true" />
                 <element signature="e#1347#1348#0" expanded="true" />
                 <element signature="e#1396#1397#0" expanded="true" />
+                <element signature="e#1631#1632#0" expanded="true" />
+                <element signature="e#1680#1681#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/DBCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="130" column="30" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
+            <state relative-caret-position="420">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="162" column="53" selection-start-line="162" selection-start-column="53" selection-end-line="162" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#12021#12022#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,10 +125,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/AddNewBookCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/DBService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" column="65" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="65" />
+            <state relative-caret-position="399">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/EditTitleBookByIdCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/DeleteBookByIdCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="21" column="24" selection-start-line="17" selection-start-column="3" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,6 +176,8 @@
       <find>lib</find>
       <find>_db</find>
       <find>catalog</find>
+      <find>book</find>
+      <find>find</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -202,7 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/14f41334-0180-4fda-9376-24662b967904/console.sql" />
         <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/DefaultActionImpl.java" />
         <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/ViewAllBooksInAllCatalogsWeb.java" />
         <option value="$PROJECT_DIR$/web/show/show_all.jsp" />
@@ -229,15 +212,18 @@
         <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/util/WebConstant.java" />
         <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/DeleteBookByIdCommand.java" />
         <option value="$PROJECT_DIR$/web/edit_book.jsp" />
+        <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/EditTitleBookByIdCommand.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/web/edit_book_title.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/find_book.jsp" />
         <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/CommandManagerWeb.java" />
         <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/DBService.java" />
-        <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/impl/RegularDBServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/EditTitleBookByIdCommand.java" />
+        <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/FindBookByTitleCommand.java" />
         <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/DBCommand.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/impl/RegularDBServiceImpl.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/14f41334-0180-4fda-9376-24662b967904/console.sql" />
         <option value="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java" />
-        <option value="$PROJECT_DIR$/web/edit_book_title.jsp" />
       </list>
     </option>
   </component>
@@ -310,15 +296,6 @@
               <item name="libraryNew" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="webCommand" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LibraryWebNew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LibraryWebNew" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="libraryNew" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="webCommand" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -335,6 +312,13 @@
               <item name="libraryNew" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LibraryWebNew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LibraryWebNew" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libraryNew" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LibraryWebNew" type="b2602c69:ProjectViewProjectNode" />
@@ -370,7 +354,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545055750066" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545058540853" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-5.1.46.jar" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -577,7 +561,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544986952907</updated>
-      <workItem from="1544986957912" duration="24426000" />
+      <workItem from="1544986957912" duration="27210000" />
     </task>
     <task id="LOCAL-00001" summary="project init v1.1">
       <created>1544989709889</created>
@@ -628,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545054742222</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add &quot;edit book title by ID&quot;">
+      <created>1545055784380</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545055784380</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -637,7 +628,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24426000" />
+    <option name="totallyTimeSpent" value="27210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
@@ -648,9 +639,9 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
-      <window_info id="Learn" />
+      <window_info id="Learn" weight="0.32975295" />
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21535982" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21535982" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" sideWeight="0.49946293" weight="0.32935324" />
       <window_info anchor="bottom" id="Database Console" weight="0.32935324" />
@@ -671,7 +662,7 @@
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" visible="true" weight="0.16648765" />
+      <window_info active="true" anchor="right" id="Database" visible="true" weight="0.16648765" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -690,20 +681,21 @@
     <MESSAGE value="add &quot;add new Author&quot;" />
     <MESSAGE value="add &quot;add new Book&quot;" />
     <MESSAGE value="add &quot;delete book by ID&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add &quot;delete book by ID&quot;" />
+    <MESSAGE value="add &quot;edit book title by ID&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add &quot;edit book title by ID&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
-          <line>216</line>
+          <line>235</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
-          <line>187</line>
+          <line>206</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -732,28 +724,10 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
-          <line>107</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
-          <line>113</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/AddNewBookCommand.java</url>
           <line>30</line>
           <properties />
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
-          <line>125</line>
-          <properties />
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
@@ -773,20 +747,28 @@
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
+          <line>163</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
+          <line>160</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e7a765e-a073-4c0a-903e-f663f1bf4844/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/14f41334-0180-4fda-9376-24662b967904/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/TwoActionImpl.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -836,13 +818,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/entity/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1007,24 +982,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/BasicCommandWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/add_book.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="19" column="72" lean-forward="true" selection-start-line="13" selection-end-line="19" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1045,13 +1006,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/DeleteBookByIdCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/web/servlets/ServletPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="654">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/edit_book_title.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="14" selection-start-line="14" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/find_book.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/BasicCommandWeb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1065,37 +1047,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/EditTitleBookByIdCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/DeleteBookByIdCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="21" column="24" selection-start-line="17" selection-start-column="3" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/DBService.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/CommandManagerWeb.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="13" />
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/FindBookByTitleCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/impl/RegularDBServiceImpl.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/14f41334-0180-4fda-9376-24662b967904/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1396#1397#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/DBCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="21">
+          <caret line="1" column="73" lean-forward="true" selection-start-line="1" selection-start-column="73" selection-end-line="1" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -1106,46 +1122,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/impl/RegularDBServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="58" column="56" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1396#1397#0" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
+            <element signature="e#1680#1681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/DBCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="130" column="30" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
+        <state relative-caret-position="355">
+          <caret line="162" column="53" selection-start-line="162" selection-start-column="53" selection-end-line="162" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/edit_book_title.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/web/servlets/ServletPost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/CommandManagerWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/EditTitleBookByIdCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#12021#12022#0" expanded="true" />
           </folding>
         </state>
       </provider>
