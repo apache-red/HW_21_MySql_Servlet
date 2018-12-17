@@ -16,7 +16,7 @@
   <li><a href="ServletShow?action=1">Show all data</a></li>
   <li><a href="ServletShow?action=2">Show all authors</a></li>
   <li><a href="ServletShow?action=3">Show all books</a></li>
-  <li><a href="add_autors.jsp">add new Authors </a></li>
+  <li><a href="add_autor.jsp">add new Authors </a></li>
   <li><a href="add_autors.jsp">add new Book </a></li>
   <li><a href="add_autors.jsp">delete book by ID </a></li>
   <li><a href="add_autors.jsp">edit book title by ID </a></li>
@@ -26,7 +26,6 @@
   <form action="MySecondSevlet" method="post">
     <input type="hidden" name="action" value="add_author"/>
     <input type="date" name="date"/>
-    <input type = "email" name="email"/>
     <input type="text" name="author_name" />
     <input type="submit" value="add new author"/>
   </form>

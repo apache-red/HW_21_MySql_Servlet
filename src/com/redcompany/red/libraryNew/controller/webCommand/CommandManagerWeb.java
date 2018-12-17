@@ -1,6 +1,7 @@
 package com.redcompany.red.libraryNew.controller.webCommand;
 
 
+import com.redcompany.red.libraryNew.controller.webCommand.impl.AddNewAuthorCommand;
 import com.redcompany.red.libraryNew.controller.webCommand.impl.ShowAllBooksCommand;
 import com.redcompany.red.libraryNew.controller.webCommand.impl.ShowAllCommand;
 import com.redcompany.red.libraryNew.controller.webCommand.impl.ShowAuthorsCommand;
@@ -15,6 +16,8 @@ public class CommandManagerWeb {
                 return new ShowAuthorsCommand();
             case "3":
                 return new ShowAllBooksCommand();
+            case "add_author":
+                return new AddNewAuthorCommand();
            default:
                 return null;
         }

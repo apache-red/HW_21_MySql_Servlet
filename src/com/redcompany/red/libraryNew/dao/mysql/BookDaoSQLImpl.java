@@ -1,7 +1,6 @@
 package com.redcompany.red.libraryNew.dao.mysql;
 
 
-
 import com.redcompany.red.libraryNew.entity.Book;
 import com.redcompany.red.libraryNew.entity.Library;
 import com.redcompany.red.libraryNew.entity.Author;
@@ -13,6 +12,8 @@ import java.util.Date;
 import java.util.List;
 
 public class BookDaoSQLImpl implements DBCommand {
+
+    private static final String SQL_INSERT_AUTHOR = "INSERT INTO author (author_name) VALUES (?)";
 
     private String standart_db = "jdbc:mysql://localhost:3306/mysql" +
             "?verifyServerCertificate=false" +
@@ -38,7 +39,7 @@ public class BookDaoSQLImpl implements DBCommand {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-        initBD();
+            initBD();
         } catch (ClassNotFoundException e1) {
             e1.printStackTrace();
         }
@@ -82,6 +83,24 @@ public class BookDaoSQLImpl implements DBCommand {
         return bookList;
     }
 
+    @Override
+    public void addNewAuthorInDb(String  author_name) {
+
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
+            Statement stmt = connection.createStatement();
+            String sql;
+            sql = "USE librarywebnew;";
+            stmt.execute(sql);
+            sql = "INSERT INTO `librarywebnew`.`mylibrary` (`catalog_authors`) VALUES ('"+ author_name+"');";
+            stmt.execute(sql);
+            System.out.println();
+        } catch (SQLException e) {
+            System.err.println("Error FILL DB !!!!");
+            e.printStackTrace();
+        }
+
+    }
+
 
     private void collectAuthorsFromRS(Statement st, List<Author> authorList) throws SQLException {
         ResultSet rs = st.executeQuery("SELECT * FROM mylibrary;");
@@ -96,23 +115,23 @@ public class BookDaoSQLImpl implements DBCommand {
     }
 
     private void collectBooksFromRS(Statement st, List<Author> authorList) throws SQLException {
-        for (int i = 0; i <authorList.size(); i++) {
+        for (int i = 0; i < authorList.size(); i++) {
             Author author = authorList.get(i);
-            List<Book> bookList= new ArrayList<>();
-            String find = String.valueOf(i+1);
+            List<Book> bookList = new ArrayList<>();
+            String find = String.valueOf(i + 1);
             ResultSet rs = st.executeQuery("SELECT id, book_title FROM catalog_books\n" +
                     "WHERE auth_id =" + find + ";");
             while (rs.next() == true) {
                 int id_book = rs.getInt("id");
                 String title = rs.getString("book_title");
                 Book book = new Book(id_book, title);
-               bookList.add(book);
+                bookList.add(book);
             }
             author.setBooks(bookList);
         }
     }
 
-    private void getBookListFromDB(Statement st, List<Book> bookList ) throws SQLException {
+    private void getBookListFromDB(Statement st, List<Book> bookList) throws SQLException {
         ResultSet rs = st.executeQuery("SELECT id, book_title FROM catalog_books;");
         while (rs.next() == true) {
             int id_book = rs.getInt("id");

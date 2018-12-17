@@ -35,5 +35,12 @@ public class RegularDBServiceImpl implements DBService {
         return bookList = dbCommand.getBookList();
     }
 
+    @Override
+    public void addNewAuthor(DBCommand dbCommand, String author_name) {
+
+    dbCommand.addNewAuthorInDb(author_name);
+
+    }
+
 
 }

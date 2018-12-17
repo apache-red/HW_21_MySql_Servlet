@@ -9,13 +9,14 @@
 <body>
 
 Create new author:
-<form action="MySecondSevlet" method="post">
+<form action="ServletPost" method="post">
 	<input type="hidden" name="action" value="add_author"/>
 	<input type="date" name="date"/>
-	<input type = "email" name="email"/>
+	<%--<input type = "email" name="email"/>--%>
 	<input type="text" name="author_name" />
 	<input type="submit" value="add new author"/>
 </form>
+<input type="button" value="<== Previous page" onclick="history.back()">
 
 
 </body>
