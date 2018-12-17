@@ -18,7 +18,6 @@ import java.util.List;
 public class ShowAllCommand implements BasicCommandWeb {
 
     private DBService dbService;
-    private DataBase dataBase;
     private List<Author> authorList;
     private BookDaoSQLImpl bookDaoSQL;
 

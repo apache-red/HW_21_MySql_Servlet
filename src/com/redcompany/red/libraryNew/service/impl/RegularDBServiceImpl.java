@@ -3,6 +3,7 @@ package com.redcompany.red.libraryNew.service.impl;
 
 import com.redcompany.red.libraryNew.dao.mysql.DBCommand;
 import com.redcompany.red.libraryNew.entity.Author;
+import com.redcompany.red.libraryNew.entity.Book;
 import com.redcompany.red.libraryNew.entity.Library;
 import com.redcompany.red.libraryNew.service.DBService;
 
@@ -12,6 +13,7 @@ public class RegularDBServiceImpl implements DBService {
    private DBCommand dbCommand;
    private Library library;
    private List<Author> authorList;
+   private List<Book> bookList;
 
 
 
@@ -26,6 +28,11 @@ public class RegularDBServiceImpl implements DBService {
     @Override
     public List<Author> getAuthorListFromLibrary(DBCommand dbCommand) {
         return authorList = dbCommand.getAuthorList();
+    }
+
+    @Override
+    public List<Book> getBookListFromLibrary(DBCommand dbCommand) {
+        return bookList = dbCommand.getBookList();
     }
 
 

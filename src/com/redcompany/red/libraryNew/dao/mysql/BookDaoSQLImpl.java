@@ -70,6 +70,18 @@ public class BookDaoSQLImpl implements DBCommand {
         return authorList;
     }
 
+    @Override
+    public List<Book> getBookList() {
+        List<Book> bookList = new ArrayList<>();
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
+            Statement st = connection.createStatement();
+            getBookListFromDB(st, bookList);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return bookList;
+    }
+
 
     private void collectAuthorsFromRS(Statement st, List<Author> authorList) throws SQLException {
         ResultSet rs = st.executeQuery("SELECT * FROM mylibrary;");
@@ -99,6 +111,18 @@ public class BookDaoSQLImpl implements DBCommand {
             author.setBooks(bookList);
         }
     }
+
+    private void getBookListFromDB(Statement st, List<Book> bookList ) throws SQLException {
+        ResultSet rs = st.executeQuery("SELECT id, book_title FROM catalog_books;");
+        while (rs.next() == true) {
+            int id_book = rs.getInt("id");
+            String title = rs.getString("book_title");
+            Book book = new Book(id_book, title);
+            bookList.add(book);
+        }
+        rs.close();
+    }
+
     private void initBD() {
         if (testDB() == false) {
             try (Connection connection = DriverManager.getConnection(standart_db, DB_USER, DB_PASS)) {
