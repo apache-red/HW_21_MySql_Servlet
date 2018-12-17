@@ -159,8 +159,9 @@ public class BookDaoSQLImpl implements DBCommand {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
             Statement stmt = connection.createStatement();
             System.out.println(book_name);
-            ResultSet rs = stmt.executeQuery("SELECT id,book_title FROM librarywebnew.catalog_books\n" +
-                    "WHERE book_title IN (SELECT id, book_title FROM librarywebnew.catalog_books WHERE book_title LIKE '%" +book_name+"%');");
+            String sql = "USE librarywebnew;";
+            stmt.execute(sql);
+            ResultSet rs = stmt.executeQuery("SELECT id,book_title FROM catalog_books WHERE book_title IN (SELECT id, book_title FROM catalog_books WHERE book_title LIKE '%"+book_name+"%');");
             int id_book = rs.getInt("id");
             String title = rs.getString("book_title");
             Book book = new Book(id_book, title);
