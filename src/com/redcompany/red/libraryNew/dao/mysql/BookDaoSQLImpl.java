@@ -129,12 +129,28 @@ public class BookDaoSQLImpl implements DBCommand {
             stmt.execute(sql);
             sql = "DELETE FROM `librarywebnew`.`catalog_books` WHERE `id` = "+num+";";
             stmt.execute(sql);
+        } catch (SQLException e) {
+            System.err.println("Error FILL DB !!!!");
+            e.printStackTrace();
+        }
+    }
+
+
+    @Override
+    public void editBookInDb(String id_book, String book_name) {
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
+            String sql;
+            Statement stmt = connection.createStatement();
+            int num = Integer.parseInt(id_book);
+            sql = "USE librarywebnew;";
+            stmt.execute(sql);
+            sql = "UPDATE `librarywebnew`.`catalog_books` t SET t.`book_title` = '"+book_name+"' WHERE t.`id` ="+ num+";";
+            stmt.execute(sql);
             System.out.println();
         } catch (SQLException e) {
             System.err.println("Error FILL DB !!!!");
             e.printStackTrace();
         }
-
     }
 
 

@@ -16,4 +16,5 @@ public interface DBService {
     void addNewAuthor(DBCommand dbCommand, String author_name);
     void addNewBook(DBCommand dbCommand, String book_name);
     void deleteBook(DBCommand dbCommand, String id_book);
+    void editBook(DBCommand dbCommand, String id_book,String book_name);
 }

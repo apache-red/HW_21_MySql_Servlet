@@ -19,6 +19,9 @@ public class CommandManagerWeb {
                 return new AddNewBookCommand();
             case "delete_book":
                 return new DeleteBookByIdCommand();
+            case "edit_book_title":
+                return new EditTitleBookByIdCommand();
+
 
            default:
                 return null;

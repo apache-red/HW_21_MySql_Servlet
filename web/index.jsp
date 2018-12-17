@@ -19,7 +19,7 @@
   <li><a href="add_autor.jsp">add new Authors </a></li>
   <li><a href="add_book.jsp">add new Book </a></li>
   <li><a href="delete_book.jsp">delete book by ID </a></li>
-  <li><a href="add_autors.jsp">edit book title by ID </a></li>
+  <li><a href="edit_book_title.jsp">edit book title by ID </a></li>
   <li><a href="add_autors.jsp">find book by title </a></li>
   test
 
