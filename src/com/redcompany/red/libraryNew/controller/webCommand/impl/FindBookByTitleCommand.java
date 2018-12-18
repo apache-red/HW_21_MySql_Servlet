@@ -33,7 +33,7 @@ public class FindBookByTitleCommand implements BasicCommandWeb {
             book = dbService.findBook(bookDaoSQL,id_book);
         }
         resp.getWriter().write( "<body>\n" +
-                "Book was deleted"+
+                "Book :"+
                 book +
                 "<input type=\"button\" value=\"<== Previous page\" onclick=\"history.back()\">\n" +
                 "</body>");

@@ -155,17 +155,18 @@ public class BookDaoSQLImpl implements DBCommand {
 
     @Override
     public Book findBookInDb(String book_name) {
-
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
             Statement stmt = connection.createStatement();
             System.out.println(book_name);
             String sql = "USE librarywebnew;";
             stmt.execute(sql);
-            ResultSet rs = stmt.executeQuery("SELECT id,book_title FROM catalog_books WHERE book_title IN (SELECT id, book_title FROM catalog_books WHERE book_title LIKE '%"+book_name+"%');");
-            int id_book = rs.getInt("id");
-            String title = rs.getString("book_title");
-            Book book = new Book(id_book, title);
-            return book;
+            ResultSet rs = stmt.executeQuery("SELECT id,book_title FROM librarywebnew.catalog_books WHERE book_title  LIKE '%"+book_name+"%';");
+            if (rs.next() == true) {
+                int id_book = rs.getInt("id");
+                String title = rs.getString("book_title");
+                Book book = new Book(id_book, title);
+                return book;
+            }
         } catch (SQLException e) {
             System.err.println("Error FILL DB !!!!");
             e.printStackTrace();

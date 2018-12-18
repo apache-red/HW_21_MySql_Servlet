@@ -7,15 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a7c915a-a2a2-405e-929a-10579f7ea73b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/FindBookByTitleCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/find_book.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/CommandManagerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/CommandManagerWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/DBCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/DBCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/DBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/DBService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/impl/RegularDBServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/redcompany/red/libraryNew/service/impl/RegularDBServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,11 +98,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="162" column="53" selection-start-line="162" selection-start-column="53" selection-end-line="162" selection-end-column="53" />
+            <state relative-caret-position="395">
+              <caret line="173" column="20" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#12021#12022#0" expanded="true" />
+                <element signature="e#12062#12063#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -354,7 +347,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545058540853" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545104169692" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-5.1.46.jar" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -561,7 +554,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544986952907</updated>
-      <workItem from="1544986957912" duration="27210000" />
+      <workItem from="1544986957912" duration="27970000" />
     </task>
     <task id="LOCAL-00001" summary="project init v1.1">
       <created>1544989709889</created>
@@ -619,7 +612,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545055784380</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add &quot;find book by title&quot;">
+      <created>1545058566239</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545058566239</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add &quot;find book by title&quot; 1.1">
+      <created>1545058877304</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545058877304</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -628,7 +635,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27210000" />
+    <option name="totallyTimeSpent" value="27970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
@@ -682,20 +689,22 @@
     <MESSAGE value="add &quot;add new Book&quot;" />
     <MESSAGE value="add &quot;delete book by ID&quot;" />
     <MESSAGE value="add &quot;edit book title by ID&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add &quot;edit book title by ID&quot;" />
+    <MESSAGE value="add &quot;find book by title&quot;" />
+    <MESSAGE value="add &quot;find book by title&quot; 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add &quot;find book by title&quot; 1.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
-          <line>235</line>
+          <line>237</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
-          <line>206</line>
+          <line>208</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -730,12 +739,6 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
-          <line>148</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/controller/webCommand/impl/EditTitleBookByIdCommand.java</url>
           <line>29</line>
           <properties />
@@ -746,24 +749,6 @@
           <line>25</line>
           <properties />
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
-          <line>159</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
-          <line>163</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java</url>
-          <line>160</line>
-          <properties />
-          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1150,11 +1135,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/redcompany/red/libraryNew/dao/mysql/BookDaoSQLImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="162" column="53" selection-start-line="162" selection-start-column="53" selection-end-line="162" selection-end-column="53" />
+        <state relative-caret-position="395">
+          <caret line="173" column="20" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#12021#12022#0" expanded="true" />
+            <element signature="e#12062#12063#0" expanded="true" />
           </folding>
         </state>
       </provider>
